@@ -1,1 +1,28 @@
 FlAMES game for problem solving:
+
+# FLAMES CALCULATOR
+
+
+**Flames** calculator is a childhood game which is used to find the relationship between two persons. Ofcource It's not acurate and real, But it seems to be fun and entertainment. Basically how it works is, having two names let's say person1 and person2, with that we should eliminate the common letters and count the lenght of both names. Now we got lenght, with that, we should iterate among the letters "F", "L", "A", "M", "E", "S" and eliminate letter if it match with the lenght we have. If we continue this, finally 1 letter will remain, it denotes the Relationship as follows.
+
+
+- F= Friends
+- L= Love
+- A= Affection
+- M= Marriage
+- E= Enemy
+- S= Siblings
+
+
+ **Pseudocode**
+
+1. start
+2. Take the input of two names      //Person1 and Person2
+3. Make all characters small to avoid needless errors
+4. for each element in Person1 , check its available on Person2
+5. If it present, remove the character from both names
+6. Now add the lenght of remaining characters in both names
+7. Create an array containing ["F", "L", "A", "M", "E", "S"]
+8.  Using while loop, Iterate among the array and remove the element if the index+1 is match with multiples of lenght that we already finded.
+9.  Terminate the loop when lenght of array is equal to 1
+10. Now we have 1 remaining element in array which denotes the relationship between the two names.

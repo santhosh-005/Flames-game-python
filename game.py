@@ -10,7 +10,7 @@ nameToCount=""
 for i in name1:
     if i in name2:
         name2=name2.replace(i,'',1)
-        name1=name1.replace(i,'',1)
+        name1=name1.replace(i,'',1) 
 
 length=len(name1)+len(name2)
 
@@ -23,6 +23,7 @@ while True:
     if index == len(flames):
         index = 0
 
+    
     if count % length == 0:
         flames.pop(index)
         index-=1
